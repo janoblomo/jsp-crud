@@ -14,7 +14,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <title>JSP Page</title>
+        <title>Usuarios - CRUD JSP</title>
     </head>
     <body>
         <%
@@ -35,6 +35,7 @@
          %>
         <div class="container">
             <h1>Usarios</h1>
+            <a class="btn btn-warning btn-sm" href="insert.jsp">Añadir usuario</a>
             <table class="table table-bordered">
                 <tr>
                     <th class="text-center">No</th>
@@ -52,8 +53,8 @@
                     <td class="text-center"><%=rs.getString("Nombre")%></td>
                     <td class="text-center"><%=rs.getString("contrasenia")%></td>
                     <td class="text-center">
-                        <a class="btn btn-warning btn-sm">Editar</a>
-                        <a class="btn btn-warning btn-danger">Eliminar</a> 
+                        <a class="btn btn-warning btn-sm" href="edit.jsp">Editar</a>
+                        <a class="btn btn-warning btn-danger btn-sm" href="delete.jsp">Eliminar</a> 
                     </td>
                 </tr>
                 <%}%>
